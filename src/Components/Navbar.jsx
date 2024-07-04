@@ -31,7 +31,7 @@ const Navbar = () => {
                         <li>
                             <ScrollLink
                                 activeClass="isActive"
-                                className={`hover:text-[#00a1ea] ${scrollNav ? 'text-white' : 'text-black'}`}
+                                className={`hover:text-[#00a1ea] ${scrollNav ? 'text-black' : 'text-black'}`}
                                 to="banner"
                                 spy={true}
                                 smooth={true}
@@ -42,7 +42,7 @@ const Navbar = () => {
                         <li>
                             <ScrollLink
                                 activeClass="isActive"
-                                className={`hover:text-[#00a1ea] mt-1 lg:mt-0 lg:ml-2 ${scrollNav ? 'text-white' : 'text-black'}`}
+                                className={`hover:text-[#00a1ea] mt-1 lg:mt-0 lg:ml-2 ${scrollNav ? 'text-black' : 'text-black'}`}
                                 to="about"
                                 spy={true}
                                 smooth={true}
@@ -53,7 +53,7 @@ const Navbar = () => {
                         <li>
                             <ScrollLink
                                 activeClass="isActive"
-                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-white' : 'text-black'}`}
+                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-black' : 'text-black'}`}
                                 to="resume"
                                 spy={true}
                                 smooth={true}
@@ -64,7 +64,7 @@ const Navbar = () => {
                         <li>
                             <ScrollLink
                                 activeClass="isActive"
-                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-white' : 'text-black'}`}
+                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-black' : 'text-black'}`}
                                 to="skills"
                                 spy={true}
                                 smooth={true}
@@ -75,7 +75,7 @@ const Navbar = () => {
                         <li>
                             <ScrollLink
                                 activeClass="isActive"
-                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-white' : 'text-black'}`}
+                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-black' : 'text-black'}`}
                                 to="projects"
                                 spy={true}
                                 smooth={true}
@@ -86,7 +86,7 @@ const Navbar = () => {
                         <li>
                             <ScrollLink
                                 activeClass="isActive"
-                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-white' : 'text-black'}`}
+                                className={`hover:text-[#00a1ea] my-1 lg:my-0 lg:mx-2 ${scrollNav ? 'text-black' : 'text-black'}`}
                                 to="footer"
                                 spy={true}
                                 smooth={true}
@@ -163,7 +163,7 @@ const Navbar = () => {
                     <li>
                         <ScrollLink
                             activeClass="isActive"
-                            className={`hover:text-[#00a1ea] ml-4 ${scrollNav ? 'text-white' : 'text-black'}`}
+                            className={`hover:text-[#00a1ea] ml-4 ${scrollNav ? 'text-white' : 'text-black'} `}
                             to="footer"
                             spy={true}
                             smooth={true}
