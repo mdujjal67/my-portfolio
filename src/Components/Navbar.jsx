@@ -21,7 +21,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`navbar pb-4 lg:pb-8 flex justify-between sticky top-0 z-50 transition-all duration-300 ${scrollNav ? 'bg-black' : 'bg-base-400'} ${scrollNav ? 'text-white' : 'text-black'}`}>
+        <nav className={`navbar pb-4 lg:pb-8 flex justify-between sticky top-0 z-50 transition-all duration-300 container mx-auto ${scrollNav ? 'bg-black' : 'bg-base-400'} ${scrollNav ? 'text-white' : 'text-black'}`}>
             <div className="navbar-start">
                 <div className="dropdown block lg:hidden z-50">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">

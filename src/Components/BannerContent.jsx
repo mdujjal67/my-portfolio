@@ -30,7 +30,7 @@ const SliderContent = () => {
                     </h1>
                 </div>
                 <p className="text-white py-7 text-[18px] lg:w-[550px] poppins">based in Dhaka, Bangladesh</p>
-                <a href="#services">
+                <a href="#contact-me">
                     <div className="relative flex">
                         <button className="pl-4 pr-10 py-2 text-white bg-[#00a1ea] hover:bg-[#00a1eaCC] hover:opacity-90 rounded-xl">Hire Me</button>
                         <FaCircleArrowRight className="text-white absolute top-[13px] left-[85px] hover:rotate-90" />
