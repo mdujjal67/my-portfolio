@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -48,9 +47,9 @@ const Navbar = () => {
         duration={500} 
         className="group"
     >
-        <h2 className={`text-2xl lg:text-3xl font-bold tracking-tighter transition-colors duration-300 poppins
+        <h2 className={`text-2xl lg:text-4xl font-bold tracking-tighter transition-colors duration-300 poppins
             ${scrollNav ? 'text-slate-900' : 'text-white'}`}>
-            Ujjal<span className="text-[#00a1ea]">.</span>
+            Ujjal<span className="text-[#00a1ea] text-4xl transform translate-y-[-8px]">.</span>
         </h2>
     </ScrollLink>
 </div>

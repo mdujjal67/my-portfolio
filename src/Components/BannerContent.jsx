@@ -3,6 +3,14 @@ import 'animate.css';
 import { Typewriter } from "react-simple-typewriter";
 
 const SliderContent = () => {
+    const handleScroll = (e) => {
+  e.preventDefault();
+  const target = document.querySelector('#contact');
+  if (target) {
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
     return (
         <div className="w-full">
             <div className="animate__animated animate__fadeInLeft lg:pl-20 pl-10 pr-5 pt-48 lg:pb-24">
@@ -35,7 +43,7 @@ const SliderContent = () => {
                 </p>
 
                 {/* Professional Call to Action */}
-                <a href="#contact" className="inline-block mt-4">
+                <a href="#contact" onClick={handleScroll} className="inline-block mt-4 transition-all duration-500">
                     <button className="group relative flex items-center justify-start px-14 py-4 text-white bg-[#00a1ea] rounded-full font-bold transition-all duration-500 hover:bg-slate-900 shadow-lg shadow-[#00a1ea]/20 overflow-hidden">
                         <span className="relative z-10 poppins">
                             Hire Me
