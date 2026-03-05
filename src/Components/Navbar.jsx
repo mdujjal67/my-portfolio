@@ -38,14 +38,22 @@ const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center px-6 lg:px-20">
                 
                 {/* Logo Section */}
-                <div className="flex items-center">
-                    <RouterLink to="/" className="group">
-                        <h2 className={`text-2xl lg:text-3xl font-bold tracking-tighter transition-colors duration-300 poppins
-                            ${scrollNav ? 'text-slate-900' : 'text-white'}`}>
-                            Ujjal<span className="text-[#00a1ea]">.</span>
-                        </h2>
-                    </RouterLink>
-                </div>
+<div className="flex items-center cursor-pointer">
+    <ScrollLink 
+        to="banner" // This matches the 'to' value of your Home link
+        href="/"
+        spy={true} 
+        smooth={true} 
+        offset={-70} 
+        duration={500} 
+        className="group"
+    >
+        <h2 className={`text-2xl lg:text-3xl font-bold tracking-tighter transition-colors duration-300 poppins
+            ${scrollNav ? 'text-slate-900' : 'text-white'}`}>
+            Ujjal<span className="text-[#00a1ea]">.</span>
+        </h2>
+    </ScrollLink>
+</div>
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:block">
