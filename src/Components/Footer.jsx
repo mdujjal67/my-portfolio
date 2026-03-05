@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-6 mt-[100px]">
             <div className="container mx-auto flex justify-between items-center px-4">
-                <p>&copy; 2024 Md Ujjal Hossain. All rights reserved.</p>
+                <p className='text-[14px]'>&copy; 2024 Md Ujjal Hossain. All rights reserved.</p>
                 <div className="flex gap-4">
                     <a href="https://github.com/mdujjal67" target="_blank"  className="text-gray-300 hover:text-gray-400 transition duration-300">
                         <FaGithub className='scale-125'/>

@@ -2,42 +2,52 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 import 'animate.css';
 import { Typewriter } from "react-simple-typewriter";
 
-
 const SliderContent = () => {
     return (
-        <div className="container mx-auto">
-            <div className="animate__animated animate__slideInLeft">
-            <div className="lg:w-3/5 lg:pl-14 pl-10 pr-3">
-            
+        <div className="w-full">
+            <div className="animate__animated animate__fadeInLeft lg:pl-20 pl-10 pr-5 pt-48 lg:pb-24">
 
-                {/* for react type writer */}
-                <div className='App '>
-                    <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-white" style={{ paddingTop: '2rem', margin: 'auto 0', fontWeight: 'normal' }}>
-                    <h2 className="text-2xl font-semibold mb-5 text-white">Welcome</h2>
-                        {' '}
-                        <span className="font-bold text-3xl md:text-4xl lg:text-5xl text-white poppins">
-                            {/* Style will be inherited from the parent element */}
+                {/* Subtle Greeting */}
+                <p className="text-[#00a1ea] font-bold tracking-widest uppercase text-sm mb-3">
+                    Welcome to my portfolio
+                </p>
+
+                {/* Main Heading - Fixed nested tags */}
+                <div className="min-h-[100px] lg:min-h-[120px]">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl text-white font-extrabold leading-tight">
+                        I am <span className="text-[#00a1ea]">
                             <Typewriter
-                                words={['I am Md Ujjal Hossain']}
-                                loop={Infinity} // Set loop to Infinity to make it loop indefinitely
+                                words={['Md Ujjal Hossain', 'a Front-End Developer', 'a React Enthusiast']}
+                                loop={Infinity}
                                 cursor
-                                cursorStyle='_'
+                                cursorStyle='|'
                                 typeSpeed={70}
-                                deleteSpeed={30}
-                                delaySpeed={900} // Adjust the delay speed as needed
+                                deleteSpeed={50}
+                                delaySpeed={1500}
                             />
                         </span>
                     </h1>
                 </div>
-                <p className="text-white py-7 text-[18px] lg:w-[550px] poppins">based in Dhaka, Bangladesh</p>
-                <a href="#contact-me">
-                    <div className="relative flex">
-                        <button className="pl-4 pr-10 py-2 text-white bg-[#00a1ea] hover:bg-[#00a1eaCC] hover:opacity-90 rounded-xl">Hire Me</button>
-                        <FaCircleArrowRight className="text-white absolute top-[13px] left-[85px] hover:rotate-90" />
-                    </div>
+
+                {/* Subtext with your exact Dhaka location */}
+                <p className="text-gray-300 py-6 text-lg lg:text-xl max-w-[550px] leading-relaxed poppins">
+                    A dedicated Web Developer based in <span className="text-white font-medium">Dhaka, Bangladesh</span>, passionate about building digital experiences.
+                </p>
+
+                {/* Professional Call to Action */}
+                <a href="#contact" className="inline-block mt-4">
+                    <button className="group relative flex items-center justify-start px-14 py-4 text-white bg-[#00a1ea] rounded-full font-bold transition-all duration-500 hover:bg-slate-900 shadow-lg shadow-[#00a1ea]/20 overflow-hidden">
+                        <span className="relative z-10 poppins">
+                            Hire Me
+                        </span>
+                        <div className="absolute right-5 flex items-center justify-center overflow-hidden w-10 h-10">
+                            <FaCircleArrowRight
+                                className="text-xl transition-all duration-1000 ease-in-out translate-x-0 opacity-100 group-hover:translate-x-14 group-hover:opacity-0"
+                            />
+                        </div>
+                    </button>
                 </a>
             </div>
-        </div>
         </div>
     );
 };
